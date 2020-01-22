@@ -93,7 +93,7 @@ function getRandomQuote() {
 function printQuote() {
   var getRand = getRandomQuote();
   var emptryString = '<p class="quote">' + getRand.quote + '</p>' +
-    '<p class ="source">' + getRand.source + '</p'
+    '<p class ="source">' + getRand.source + '</p>'
 
   if (getRand.citation) {
     emptryString += '<span class = "citation">' + getRand.citation + '</span>'
