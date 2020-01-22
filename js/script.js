@@ -101,7 +101,7 @@ function printQuote() {
   if (getRand.year) {
     emptryString += '<span class = "year">' + getRand.year + '</span>'
   }
-
+  emptryString += '</p>';
   document.getElementById('quote-box').innerHTML = emptryString;
 }
 
