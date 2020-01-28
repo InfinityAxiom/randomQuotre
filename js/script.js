@@ -7,33 +7,33 @@ var quotes = [
   {
     quote: '"The greatest glory in living lies not in never falling, but in rising every time we fall."',
     source: 'Ralph Waldo Emerson',
-    citation: ', Gems of Literature',
+    citation: ' Gems of Literature',
     year: '1900'
 
   },
   {
     quote: '"The way to get started is to quit talking and begin doing."',
-    source: 'Walt Disney, ',
+    source: 'Walt Disney ',
     citation: '',
     year: ''
   },
   {
     quote: 'If life were predictable it would cease to be life, and be without flavor.',
     source: 'Eleanor Roosevelt, ',
-    citation: ' ',
+    citation: '',
     year: '1857'
 
   },
   {
     quote: 'If you look at what you have in life, you will always have more. If you look at what you dont have in life, you willll never have enough.',
-    source: 'Oprah Winfrey, ',
+    source: 'Oprah Winfrey ',
     citation: ' TV Show',
     year: '2008'
 
   },
   {
     quote: 'Booyakasha',
-    source: 'Ali G,',
+    source: 'Ali G',
     citation: ' Da Ali G Show',
     year: '2004'
 
@@ -41,7 +41,7 @@ var quotes = [
   {
     quote: 'Whoever is happy will make others happy too.',
     source: 'Anne Frank',
-    citation: ' ',
+    citation: '',
     year: ''
 
   },
@@ -62,7 +62,7 @@ var quotes = [
   {
     quote: 'Dont judge each day by the harvest you reap but by the seeds that you plant.',
     source: 'Robert Louis Stevenson',
-    citation: ' ',
+    citation: '',
     year: ''
 
   },
@@ -95,10 +95,10 @@ function printQuote() {
   var emptryString = '<p class="quote">' + getRand.quote + '</p>' +
     '<p class ="source">' + getRand.source + '</p>'
 
-  if (getRand.citation) {
+  if (getRand.citation.length !==0) {
     emptryString += '<span class = "citation">' + getRand.citation + '</span>'
   }
-  if (getRand.year) {
+  if (getRand.year.length !==0) {
     emptryString += '<span class = "year">' + getRand.year + '</span>'
   }
   emptryString += '</p>';
