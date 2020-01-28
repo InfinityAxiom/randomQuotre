@@ -95,10 +95,10 @@ function printQuote() {
   var emptryString = '<p class="quote">' + getRand.quote + '</p>' +
     '<p class ="source">' + getRand.source + '</p>'
 
-  if (getRand.citation.length !==0) {
+  if (getRand.citation.length !== 0) {
     emptryString += '<span class = "citation">' + getRand.citation + '</span>'
   }
-  if (getRand.year.length !==0) {
+  if (getRand.year.length !== 0) {
     emptryString += '<span class = "year">' + getRand.year + '</span>'
   }
   emptryString += '</p>';
