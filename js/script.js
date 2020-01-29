@@ -76,7 +76,7 @@ function getRandomQuote () {
 
   var randomNumber = Math.floor(Math.random() * quotes.length)
   //select which quote to pull
-  
+
   return quotes[randomNumber]
 }
 
