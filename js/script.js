@@ -89,7 +89,7 @@ function printQuote () {
     getRand.quote +
     '</p>' +
     '<p class ="source">' +
-    getRand.source 
+    getRand.source
 
   if (getRand.citation.length !== 0) {
     emptryString += '<span class = "citation">' + getRand.citation + '</span>'
@@ -100,12 +100,6 @@ function printQuote () {
   emptryString += '</p>'
   document.getElementById('quote-box').innerHTML = emptryString
 }
-
-/***
- * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
- ***/
-
 document
   .getElementById('load-quote')
   .addEventListener('click', printQuote, false)
